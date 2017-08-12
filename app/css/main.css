@@ -125,15 +125,3 @@ button {
   background: rgba(255, 255, 255, 0.18);
   color: #fff;
 }
-
-.keys button:focus,
-.keys button:active,
-.keys button.operator:focus,
-.keys button.operator:active,
-.top button.equals:focus,
-.top button.equals:active,
-.top button.clear:focus,
-.top button.clear:active {
-  color: #fff;
-  background: rgb(69, 154, 51);
-}
