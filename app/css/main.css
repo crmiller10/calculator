@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  height: 100%;
+  position: relative;
+  background: #fff;
+  background-size: cover;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+h1 {
+  margin-bottom: 60px;
+  color: #353B3B;
+  font-size: 48px;
+  font-weight: 200;
+}
+
+main {
+  padding-top: 100px;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+.wrapper {
+  display: flex;
+  align-content: center;
+  height: 100%;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#calculator {
+  font-size: 28px;
+  width: 12em;
+  height: auto;
+  background: #61B34F;
+  margin: auto;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.top button.clear,
+.top span.clear {
+  float: left;
+  box-shadow: 0 4px #ff7c87;
+  color: #fff;
+}
+
+.top .input {
+  height: 3em;
+  width: 9em;
+  padding-right: 1em;
+  float: right;
+  color: #fff;
+  font-weight: 300;
+  line-height: 3em;
+  text-align: right;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.keys,
+.top {
+  overflow: hidden;
+  width: 336px;
+}
+
+.keys button,
+.top button.clear {
+  float: left;
+  outline: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  height: 84px;
+  width: 84px;
+  line-height: 84px;
+  color: #fff;
+  text-align: center;
+  user-select: none;
+  background: #61B34F;
+  border: none;
+  transition: background-color 0.2s ease;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.keys button.operator {
+  background: rgba(255, 255, 255, 0.18);
+  border-right: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.keys button.operator:hover {
+  background: rgb(134, 202, 120);
+}
+
+.keys button:hover,
+.top button.clear:hover,
+.keys button.equals:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.keys button:focus,
+.keys button:active,
+.keys button.operator:focus,
+.keys button.operator:active,
+.top button.equals:focus,
+.top button.equals:active,
+.top button.clear:focus,
+.top button.clear:active {
+  color: #fff;
+  background: rgb(69, 154, 51);
+}
